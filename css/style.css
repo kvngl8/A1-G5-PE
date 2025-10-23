@@ -1,0 +1,130 @@
+/* styles.css */
+
+/* Resetea margenes y padding */
+body {
+    font-family: century, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0d07 !important;
+    /* Se utiliza el '!important' para que coloree el fondo de negro por encima del habitual (blanco)*/
+}
+
+/* Estilos para el navbar */
+nav {
+    background-color: #000000;
+    padding: 10px;
+    flex: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #A01904;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+.nav-item {
+    color: rgb(242, 255, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.7s ease;
+}
+
+.nav-item:hover {
+    background-color: #dbc659;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    margin: 0;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+/* Estilos para las filas y columnas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin: 5px;
+}
+
+.col {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+    background-color: #152c56;
+    border-radius: 20px;
+    margin: 2px;
+    margin-bottom: 0px;
+}
+
+.blanco {
+    /* se crea este para destacar a los demás */
+    flex: 1;
+    min-width: 200px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #152c56;
+    border-radius: 2px;
+
+}
+
+/* Estilos para títulos y párrafos */
+.col h1,
+.col h2 {
+    color: #cacaca;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* letra para los títulos H1 y H2 */
+}
+
+p {
+    /* se mantiene letra normal */
+    color: #ffffff;
+    text-align: center;
+}
+
+.text-center {
+    /* centramos el texto */
+    margin: 15px;
+}
+
+/* Estilos para las cards*/
+.card-img-top {
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.card-body {
+    /* pinta la card de texto de color rojo */
+    background-color: #A01904;
+}
+
+.card-title,
+.card-text,
+.text-body-secondary {
+    color: #cacaca;
+}
